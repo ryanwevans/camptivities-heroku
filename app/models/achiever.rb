@@ -1,2 +1,0 @@
-class Achiever < ApplicationRecord
-end

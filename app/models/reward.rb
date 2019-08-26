@@ -1,2 +1,0 @@
-class Reward < ApplicationRecord
-end
