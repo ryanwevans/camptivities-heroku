@@ -23,13 +23,13 @@ default: &default
 
 development:
   <<: *default
-  database: heroku-deploy_development
+  database: camptivities_development
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
   # the same name as the operating system user that initialized the database.
-  #username: heroku-deploy
+  #username: camptivities
 
   # The password associated with the postgres role (username).
   #password:
@@ -44,7 +44,7 @@ development:
   #port: 5432
 
   # Schema search path. The server defaults to $user,public
-  #schema_search_path: myapp,sharedapp,public
+  #schema_search_path: camptivities,sharedapp,public
 
   # Minimum log levels, in increasing order:
   #   debug5, debug4, debug3, debug2, debug1,
@@ -57,7 +57,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: heroku-deploy_test
+  database: camptivities_test
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -80,6 +80,6 @@ test:
 #
 production:
   <<: *default
-  database: heroku-deploy_production
-  username: heroku-deploy
-  password: <%= ENV['HEROKU-DEPLOY_DATABASE_PASSWORD'] %>
+  database: camptivities_production
+  username: camptivities
+  password: <%= ENV['CAMPTIVITIES_DATABASE_PASSWORD'] %>
